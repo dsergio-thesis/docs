@@ -14,3 +14,47 @@ For more information on the Rubin Science Platform, please refer to the
 following resources:
 
 - <https://data.lsst.cloud/>
+
+## Dataset Construction
+
+### Step 1: TAP Query
+
+The python package `lsst.rsp` provides a convenient interface to query
+the LSST TAP service.
+
+ADQL used:
+
+    SELECT TOP {max_records}
+    objectId,
+    coord_ra,
+    coord_dec,
+
+    -- u
+    u_psfFlux,            u_psfFluxErr,            u_psfFlux_flag,
+    u_free_cModelFlux,    u_free_cModelFluxErr,    u_free_cModelFlux_flag,
+
+    -- g
+    g_psfFlux,            g_psfFluxErr,            g_psfFlux_flag,
+    g_free_cModelFlux,    g_free_cModelFluxErr,    g_free_cModelFlux_flag,
+
+    -- r
+    r_psfFlux,            r_psfFluxErr,            r_psfFlux_flag,
+    r_free_cModelFlux,    r_free_cModelFluxErr,    r_free_cModelFlux_flag,
+
+    -- i
+    i_psfFlux,            i_psfFluxErr,            i_psfFlux_flag,
+    i_free_cModelFlux,    i_free_cModelFluxErr,    i_free_cModelFlux_flag,
+
+    -- z
+    z_psfFlux,            z_psfFluxErr,            z_psfFlux_flag,
+    z_free_cModelFlux,    z_free_cModelFluxErr,    z_free_cModelFlux_flag,
+
+    -- y
+    y_psfFlux,            y_psfFluxErr,            y_psfFlux_flag,
+    y_free_cModelFlux,    y_free_cModelFluxErr,    y_free_cModelFlux_flag,
+
+    refExtendedness
+
+    FROM dp1.Object
+    WHERE coord_ra BETWEEN {ra_min} AND {ra_max}
+        AND coord_dec BETWEEN {dec_min} AND {dec_max}
