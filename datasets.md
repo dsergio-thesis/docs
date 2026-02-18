@@ -13,7 +13,7 @@ following resources:
 
 ## Dataset Construction
 
-### Step 1: TAP Query
+### Step 1a: TAP Query
 
 The python package `lsst.rsp` provides a convenient interface to query
 the LSST TAP service.
@@ -58,14 +58,13 @@ ADQL used:
 ### Step 1b: 3D-HST catalog cross-match
 
 The 3D-HST catalog (<span class="nocase">Skelton et al.</span>, 2014) is
-a photometric catalog that includes data from the CANDELS survey. We
-cross-match our sample with the 3D-HST catalog to obtain additional
-photometric information for our sources. The cross-matching is performed
-using a positional matching algorithm with a search radius of 1
-arcsecond. This allows us to identify counterparts in the 3D-HST catalog
-for our sources, providing us with multi-wavelength photometry that can
-be used for further analysis, such as spectral energy distribution (SED)
-fitting and redshift estimation.
+a massive catalog that includes detailed Star Formation Rate (SFR)
+labels. We cross-match our dataset with the 3D-HST catalog to obtain
+labels. The cross-matching is performed using a positional matching
+algorithm with a search radius of 0.8 arcseconds.
+
+The 3D-HST catalog datasets can be accessed here:
+<https://archive.stsci.edu/prepds/3d-hst/>.
 
 # References
 
