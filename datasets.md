@@ -1,4 +1,4 @@
-## Background
+# Background
 
 The datasets are constructed using the Rubin Science Platform, which is
 a software stack developed for the Vera C. Rubin Observatory. The Rubin
@@ -11,9 +11,9 @@ following resources:
 
 - <https://data.lsst.cloud/>
 
-## Dataset Construction
+# Dataset Construction
 
-### Step 1a: TAP Query
+## Step 1a: TAP Query
 
 The python package `lsst.rsp` provides a convenient interface to query
 the LSST TAP service.
@@ -55,7 +55,7 @@ ADQL used:
     WHERE coord_ra BETWEEN {ra_min} AND {ra_max}
         AND coord_dec BETWEEN {dec_min} AND {dec_max}
 
-### Step 1b: 3D-HST catalog cross-match
+## Step 1b: 3D-HST catalog cross-match
 
 The 3D-HST catalog (<span class="nocase">Skelton et al.</span>, 2014) is
 a massive catalog that includes detailed Star Formation Rate (SFR)
