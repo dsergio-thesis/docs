@@ -66,6 +66,17 @@ algorithm with a search radius of 0.8 arcseconds.
 The 3D-HST catalog datasets can be accessed here:
 <https://archive.stsci.edu/prepds/3d-hst/>.
 
+## Step 3: 3D-HST catalog cross-match
+
+The 3D-HST catalog (<span class="nocase">Skelton et al.</span>, 2014) is
+a massive catalog that includes detailed Star Formation Rate (SFR)
+labels. We cross-match our dataset with the 3D-HST catalog to obtain
+labels. The cross-matching is performed using a positional matching
+algorithm with a search radius of 0.8 arcseconds.
+
+The 3D-HST catalog datasets can be accessed here:
+<https://archive.stsci.edu/prepds/3d-hst/>.
+
 # References
 
 <div id="refs" class="references csl-bib-body hanging-indent"
