@@ -62,25 +62,30 @@ ADQL used:
 
 ### Step 1b: 3D-HST catalog cross-match
 
-The 3D-HST catalog ([Skelton et al.]{.nocase}, 2014) is a photometric
-catalog that includes data from the CANDELS survey. We cross-match our
-sample with the 3D-HST catalog to obtain additional photometric
-information for our sources. The cross-matching is performed using a
-positional matching algorithm with a search radius of 1 arcsecond. This
-allows us to identify counterparts in the 3D-HST catalog for our
-sources, providing us with multi-wavelength photometry that can be used
-for further analysis, such as spectral energy distribution (SED) fitting
-and redshift estimation.
+The 3D-HST catalog (<span class="nocase">Skelton et al.</span>, 2014) is
+a photometric catalog that includes data from the CANDELS survey. We
+cross-match our sample with the 3D-HST catalog to obtain additional
+photometric information for our sources. The cross-matching is performed
+using a positional matching algorithm with a search radius of 1
+arcsecond. This allows us to identify counterparts in the 3D-HST catalog
+for our sources, providing us with multi-wavelength photometry that can
+be used for further analysis, such as spectral energy distribution (SED)
+fitting and redshift estimation.
 
 \# References
 
-::: #refs :::
+::: \#refs :::
 
-:::: {#refs .references .csl-bib-body .hanging-indent entry-spacing="0" line-spacing="2"}
-::: {#ref-skelton2014 .csl-entry}
-[Skelton, R. E., Whitaker, K. E., Momcheva, I. G., & al., et]{.nocase}.
-(2014). 3D-HST WFC3-selected photometric catalogs in the five
-CANDELS/3D-HST fields. *The Astrophysical Journal Supplement Series*,
-*214*(2), 24. <https://doi.org/10.1088/0067-0049/214/2/24>
-:::
-::::
+<div id="refs" class="references csl-bib-body hanging-indent"
+entry-spacing="0" line-spacing="2">
+
+<div id="ref-skelton2014" class="csl-entry">
+
+<span class="nocase">Skelton, R. E., Whitaker, K. E., Momcheva, I. G., &
+al., et</span>. (2014). 3D-HST WFC3-selected photometric catalogs in the
+five CANDELS/3D-HST fields. *The Astrophysical Journal Supplement
+Series*, *214*(2), 24. <https://doi.org/10.1088/0067-0049/214/2/24>
+
+</div>
+
+</div>
