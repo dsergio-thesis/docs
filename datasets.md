@@ -1,8 +1,3 @@
----
-bibliography: paper.bib
-csl: styles/apa.csl
----
-
 ## Background
 
 The datasets are constructed using the Rubin Science Platform, which is
@@ -73,8 +68,6 @@ be used for further analysis, such as spectral energy distribution (SED)
 fitting and redshift estimation.
 
 \# References
-
-::: \#refs :::
 
 <div id="refs" class="references csl-bib-body hanging-indent"
 entry-spacing="0" line-spacing="2">
