@@ -1,6 +1,7 @@
-# Datasets
-
-------------------------------------------------------------------------
+---
+bibliography: paper.bib
+csl: styles/apa.csl
+---
 
 ## Background
 
@@ -58,3 +59,28 @@ ADQL used:
     FROM dp1.Object
     WHERE coord_ra BETWEEN {ra_min} AND {ra_max}
         AND coord_dec BETWEEN {dec_min} AND {dec_max}
+
+### Step 1b: 3D-HST catalog cross-match
+
+The 3D-HST catalog ([Skelton et al.]{.nocase}, 2014) is a photometric
+catalog that includes data from the CANDELS survey. We cross-match our
+sample with the 3D-HST catalog to obtain additional photometric
+information for our sources. The cross-matching is performed using a
+positional matching algorithm with a search radius of 1 arcsecond. This
+allows us to identify counterparts in the 3D-HST catalog for our
+sources, providing us with multi-wavelength photometry that can be used
+for further analysis, such as spectral energy distribution (SED) fitting
+and redshift estimation.
+
+\# References
+
+::: #refs :::
+
+:::: {#refs .references .csl-bib-body .hanging-indent entry-spacing="0" line-spacing="2"}
+::: {#ref-skelton2014 .csl-entry}
+[Skelton, R. E., Whitaker, K. E., Momcheva, I. G., & al., et]{.nocase}.
+(2014). 3D-HST WFC3-selected photometric catalogs in the five
+CANDELS/3D-HST fields. *The Astrophysical Journal Supplement Series*,
+*214*(2), 24. <https://doi.org/10.1088/0067-0049/214/2/24>
+:::
+::::
