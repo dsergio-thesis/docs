@@ -67,7 +67,7 @@ for our sources, providing us with multi-wavelength photometry that can
 be used for further analysis, such as spectral energy distribution (SED)
 fitting and redshift estimation.
 
-\# References
+# References
 
 <div id="refs" class="references csl-bib-body hanging-indent"
 entry-spacing="0" line-spacing="2">
